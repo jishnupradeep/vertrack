@@ -482,7 +482,7 @@ var demo = {
             dataDailySalesChart = {
                 labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
                 series: [
-                    [12, 17, 7, 17, 23, 18, 38]
+                    [14, 10, 5, 6, 8, 2, 0]
                 ]
             };
 
@@ -757,18 +757,22 @@ var demo = {
             /* ----------==========     Completed Tasks Chart initialization    ==========---------- */
 
             dataCompletedTasksChart = {
-                labels: ['12p', '3p', '6p', '9p', '12p', '3a', '6a', '9a'],
+                labels: ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'],
                 series: [
-                    [230, 750, 450, 300, 280, 240, 200, 190]
+                    [30, 26, 34, 13, 34, 47, 88, 90, 102, 56, 43, 9], 
+                    [],
+                    [22, 21, 13, 21, 54, 54, 65, 76, 90, 65, 20, 14]
                 ]
+                
             };
 
             optionsCompletedTasksChart = {
                 lineSmooth: Chartist.Interpolation.cardinal({
                     tension: 0
                 }),
+
                 low: 0,
-                high: 1000, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+                high: 150, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
                 chartPadding: {
                     top: 0,
                     right: 0,
@@ -788,7 +792,7 @@ var demo = {
             var dataWebsiteViewsChart = {
                 labels: ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'],
                 series: [
-                    [542, 443, 320, 780, 553, 453, 326, 434, 568, 610, 756, 895]
+                    [30, 26, 34, 13, 34, 47, 88, 90, 102, 56, 43, 9]
 
                 ]
             };
@@ -797,7 +801,7 @@ var demo = {
                     showGrid: false
                 },
                 low: 0,
-                high: 1000,
+                high: 150,
                 chartPadding: {
                     top: 0,
                     right: 5,
