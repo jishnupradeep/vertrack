@@ -2760,9 +2760,10 @@ fieldset:disabled a.btn {
 
 .btn-block {
   display: block;
-  width: 100%; }
+  width: 80%; }
   .btn-block + .btn-block {
-    margin-top: 0.5rem; }
+    margin-top: 1rem;
+   }
 
 input[type="submit"].btn-block,
 input[type="reset"].btn-block,
