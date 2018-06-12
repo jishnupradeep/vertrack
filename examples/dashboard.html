@@ -23,7 +23,7 @@
 
 <body class="">
     <div class="wrapper">
-        <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
+        <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-3.jpg">
             <!--
         Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
 
@@ -93,7 +93,7 @@
             <nav class="navbar navbar-expand-lg navbar-transparent  navbar-absolute fixed-top">
                 <div class="container-fluid">
                     <div class="navbar-wrapper">
-                        <a class="navbar-brand" href="#pablo">Dashboard</a>
+                        <a class="navbar-brand" href="../examples/dashboard.html" style="font-size: 23px; font-weight: 500">Dashboard</a>
                     </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="sr-only">Toggle navigation</span>
@@ -113,7 +113,7 @@
                         </form>
                      <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="#pablo">
+                                <a class="nav-link" href="../examples/dashboard.html">
                                     <i class="material-icons">dashboard</i>
                                     <p>
                                         <span class="d-lg-none d-md-block">Stats</span>
@@ -138,7 +138,8 @@
                             </li> -->
                             <li class="nav-item">
                                 <a class="nav-link" href="#pablo">
-                                    <i class="material-icons">person</i>
+                                    <button style="background-color: transparent; border: transparent" rel="tooltip" class="profile" title="Kellogg Admissions" data-tippy-animation="shift-toward"
+                                    ><i class="material-icons">person</i></button>
                                     <p>
                                         <span class="d-lg-none d-md-block">Account</span>
                                     </p>
@@ -158,8 +159,8 @@
                                     <div class="card-icon">
                                         <i class="material-icons">account_balance</i>
                                     </div>
-                                    <p class="card-category">Total Applicants: Fall 2018</p>
-                                    <h3 class="card-title">1290
+                                    <p class="card-category">Total Applicants: <b>Fall 2018</b></p>
+                                    <h3 class="card-title">572
                                      <!--   <small>GB</small> -->
                                     </h3>
                                 </div>
@@ -177,8 +178,8 @@
                                     <div class="card-icon">
                                         <i class="material-icons">account_balance</i>
                                     </div>
-                                    <p class="card-category">Total Applicants: Spring 2019</p>
-                                    <h3 class="card-title">890</h3>
+                                    <p class="card-category">Total Applicants: <b>Spring 2019</b></p>
+                                    <h3 class="card-title">245</h3>
                                 </div>
                                 <div class="card-footer">
                                     <div class="stats">
@@ -193,8 +194,8 @@
                                     <div class="card-icon">
                                         <i class="material-icons">business_center</i>
                                     </div>
-                                    <p class="card-category">Full Time MBA</p>
-                                    <h3 class="card-title">754</h3>
+                                    <p class="card-category"><b>Full Time MBA</b></p>
+                                    <h3 class="card-title">522</h3>
                                 </div>
                                 <div class="card-footer">
                                     <div class="stats">
@@ -209,8 +210,8 @@
                                     <div class="card-icon">
                                         <i class="material-icons">business_center</i>
                                     </div>
-                                    <p class="card-category">Executive MBA</p>
-                                    <h3 class="card-title">320</h3>
+                                    <p class="card-category"><b>Executive MBA</b></p>
+                                    <h3 class="card-title">295</h3>
                                 </div>
                                 <div class="card-footer">
                                     <div class="stats">
@@ -230,7 +231,7 @@
                                         </div>
                                         <div class="card-body">
                                             <h4 class="card-title">Fall 2018</h4>
-                                            <p class="card-category">Monthly Applicant Breakdown</p>
+                                            <p class="card-category"><b>Monthly</b> Applicant Breakdown</p>
                                         </div>
                                         <div class="card-footer">
                                             <div class="stats">
@@ -248,7 +249,7 @@
                                 </div>
                                 <div class="card-body">
                                     <h4 class="card-title">Fall 2018</h4>
-                                    <p class="card-category">Weekly Applicant Breakdown</p>
+                                    <p class="card-category"><b>Weekly</b> Applicant Breakdown</p>
                                 </div>
                                 <div class="card-footer">
                                     <div class="stats">
@@ -266,8 +267,8 @@
                                     <div class="ct-chart" id="completedTasksChart"></div>
                                 </div>
                                 <div class="card-body">
-                                    <h4 class="card-title">MBA Program</h4>
-                                    <p class="card-category">Weekly Applicants</p>
+                                    <h4 class="card-title">MBA Program: Yearly Comparison</h4>
+                                    <p class="card-category"><b>2018 vs <span style="color: orange">2017</span></b></p>
                                 </div>
                                 <div class="card-footer">
                                     <div class="stats">
@@ -602,7 +603,7 @@
                         &copy;
                         <script>
                             document.write(new Date().getFullYear())
-                        </script>, made with love by
+                        </script>, Developed by
                         <a href="https://www.veryverid.com" target="_blank">VerID</a> for a better web.
                     </div>
                 </div>
@@ -611,8 +612,20 @@
     </div>
 </body>
 <!--   Core JS Files   -->
+<script>
+    tippy('.profile',{
+      delay: 100,
+      arrow: true,
+      arrowType: 'round',
+      size: 'large',
+      animation: 'scale'
+    })
+    </script>
+
+
 <script src="../assets/js/core/jquery.min.js"></script>
 <script src="../assets/js/core/popper.min.js"></script>
+<script src="https://unpkg.com/tippy.js@2.5.2/dist/tippy.all.min.js"></script>
 <script src="../assets/js/bootstrap-material-design.js"></script>
 <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
 <!--  Charts Plugin, full documentation here: https://gionkunz.github.io/chartist-js/ -->

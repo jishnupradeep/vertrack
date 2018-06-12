@@ -15,11 +15,10 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
     <link rel="stylesheet" href="../assets/css/material-dashboard.css?v=2.0.0">
+    
     <!-- Documentation extras -->
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="../assets/assets-for-demo/demo.css" rel="stylesheet" />
-    <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-
     <!-- iframe removal -->
 </head>
 
@@ -50,6 +49,43 @@
                             <p>Applicant Profile</p>
                         </a>
                     </li> 
+            
+              <!--      <li class="nav-item ">
+                        <a class="nav-link" href="../examples/table.html">
+                            <i class="material-icons">content_paste</i>
+                            <p>Table List</p>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../examples/typography.html">
+                            <i class="material-icons">library_books</i>
+                            <p>Typography</p>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../examples/icons.html">
+                            <i class="material-icons">bubble_chart</i>
+                            <p>Icons</p>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../examples/maps.html">
+                            <i class="material-icons">location_ons</i>
+                            <p>Maps</p>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../examples/notifications.html">
+                            <i class="material-icons">notifications</i>
+                            <p>Notifications</p>
+                        </a>
+                    </li>
+                    <li class="nav-item active-pro">
+                        <a class="nav-link" href="../examples/upgrade.html">
+                            <i class="material-icons">unarchive</i>
+                            <p>Upgrade to PRO</p>
+                        </a>
+                    </li> -->
                 </ul>
             </div>
         </div>
@@ -58,7 +94,7 @@
             <nav class="navbar navbar-expand-lg navbar-transparent  navbar-absolute fixed-top">
                 <div class="container-fluid">
                     <div class="navbar-wrapper">
-                        <a class="navbar-brand" href="#pablo" style="font-size: 23px; font-weight: 500">Applicant Profile</a>
+                        <a class="navbar-brand" href="#pablo" style="font-size: 23px; font-weight: 500">Applicant Status > <span style="font-weight: 100">John Doe</span></a>
                     </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="sr-only">Toggle navigation</span>
@@ -116,150 +152,125 @@
             <!-- End Navbar -->
             <div class="content">
                 <div class="container-fluid">
-                   
-
-                        <div class="col-md-4">
-                                <a href="../examples/applicant_add.html"><button type="button" class="btn btn-warning btn-lg"> <i class="material-icons" style="font-size: 30px; margin-left: -20px">
-                                        add
-                                        </i>  &nbsp; Add Applicant</button>
-                                </a>
-                            </div>
 
                     <div class="row">
-                        <div class="col-lg-10 col-md-12">
+                        <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header card-header-primary">
-                                    <h4 class="card-title">Search Profiles</h4>
-                                   <!-- <p class="card-category">New employees on 15th September, 2016</p> -->
+                                    <h4 class="card-title">Applicant Profile  <a href="applicant_profile_j.html"><i style="margin-left: 1140px; font-size: 20px" class="material-icons">
+                                            cancel
+                                            </i></a></h4> 
+                                    
                                 </div>
                                 <div class="card-body table-responsive">
+<div class="row" style="align-self: midd;">
+        <div class="col-3" style="margin-left: 40px;margin-top: 20px">
+                <p style=" font-size: 16px">Name: <span style="font-weight: bold;">John Doe</span></p> 
+                <p style=" font-size: 16px">Email: <span style="font-weight: bold">john.doe@gmail.com</span></p>
+                <p style=" font-size: 16px">Phone: <span style="font-weight: bold">+1(912)-345-1234</span></p>
+                <p style=" font-size: 16px">Address: <span style="font-weight: bold">Chicago, IL</span></p>
+             </div>
 
-                                        <div class="col-3" style="align-self: center">
-                                            <div class="form-group">
-                                                <label for="exampleFormControlSelect1">Select Program</label>
-                                                <select class="form-control" id="exampleFormControlSelect1">
-                                                  <option >MBA Fall 2018</option>
-                                                  <option disabled>MBA Spring 2019</option>
-                                                  <option disabled>Executive MBA Program</option>
-                                                </select>
-                                              </div>
-                                        </div>
-                                              <br>
-                                              <div class="row">
-                                                
-<div class="col-4" style="margin-right: 10px">
-        <div class="input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text">
-                      <i class="material-icons">group</i>
-                  </span>
-                </div>
-                <input type="text" class="form-control" placeholder="Search by Name">
-              </div>
+             <div class="col-3" style="margin-left: 110px;margin-top: 20px">
+                    <p style=" font-size: 16px">Profile ID: <span style="font-weight: bold">MB182501</span></p> 
+                    <p style=" font-size: 16px">Consent Form: <span style="font-weight: bold; color: orange">Waiting</span></p>
+                    <p style=" font-size: 16px">Admission Round: <span style="font-weight: bold">1</p>
+                 </div>
+
+                 <div class="col-3" style="margin-left: 80px;margin-top: 20px">
+                        <p style=" font-size: 16px">Status: <span style="font-weight: bold; color: rgb(102, 102, 102)">Pending</span></p> 
+                        <button onclick="window.location.href='applicant_profile_j.html'" type="button" rel="tooltip" class="btn" style="background: linear-gradient(to top left, #3023AE , #C86DD7); border-radius: 15px; width: 170px">
+                                Back to Profile                                                                    </button>
+                     </div>
 </div>
- <p style="font-weight:bold"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -OR- </p>
-<div class="col-4" style="margin-left: 150px">
-        <div class="input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text">
-                      <i class="material-icons">filter_1</i>
-                  </span>
-                </div>
-                <input type="text" class="form-control" placeholder="Search by ProfileID">
-              </div>
+
+
 </div>
-              
 </div>
-<br>
+</div> 
+</div> 
 
-
-
-
-                                                 
-
-
-                                </div>
-                            </div>
-                        </div> 
-                    </div> 
-
-                    <div class="row">
-                            <div class="col-lg-10 col-md-12">
-                                <div class="card">
-                                    <div class="card-header card-header-primary">
-                                        <h4 class="card-title ">Recent Profiles</h4>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <thead class=" text-primary">
-                                                    <th style="font-weight:500">
-                                                        ID
-                                                    </th>
-                                                    <th style="font-weight:500 ">
-                                                        Name
-                                                    </th>
-                                                    <th style="font-weight:500 ">
-                                                            Date added
-                                                        </th>
-                                                        <th style="font-weight:500 ">
-                                                            Status
-                                                        </th>
-                                                </thead>
-                                                <tbody>
-                                                    <tr onclick="window.location='#'">
-                                                             <td>
-                                                                    <a href="applicant_profile_j.html">MB182501 </a>
-                                                        </td> 
-                                                        <td>
-                                                                John Doe
-                                                        </td>
-                                                        <td>
-                                                                06/01/2018
-                                                        </td>
-                                                        <td>
-                                                                <button onclick="window.location.href='applicant_profile_j.html'" type="button" rel="tooltip" class="btn" style="background-color: #868686;border-radius: 20px; width: 138px; margin-left: -35px">
-Pending                                                                    </button>
-                                                        </td>
-                                                    </tr> 
-                                                    <tr>
-                                                        <td>
-                                                                <a href="applicant_profile_k.html"> MB182671 </a>
-                                                        </td>
-                                                        <td>
-                                                                Kate Peters
-                                                        </td>
-                                                        <td>
-                                                                04/05/2018
-                                                        </td>
-                                                        <td>
-                                                                <button onclick="window.location.href='applicant_profile_k.html'" type="button" rel="tooltip" class="btn" style="background-color: #ff9010; border-radius: 20px; width: 138px; margin-left: -35px">
-                                                                        In Progress                                                                    </button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                            <td>
-                                                                    <a href=applicant_profile_a.html> MB181342 </a>
-                                                            </td>
-                                                            <td>
-                                                                    Adam Smith
-                                                            </td>
-                                                            <td>
-                                                                    02/02/2018
-                                                            </td>
-                                                            <td>
-                                                                    <button  onclick="window.location.href='applicant_profile_a.html'"type="button" rel="tooltip" class="btn" style="background-color: #36d136; border-radius: 20px; width: 138px; margin-left: -35px">
-                                                                            Completed                                                                    </button>
-                                                            </td>
-                                                        </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                           
+<hr>
+                                       
+<div class="row">
+               <div class="col-12">
+                    <div class="card">
+                        <div class="card-header card-header-primary">
+                            <h4 class="card-title ">Status Log</h4>
                         </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead class=" text-primary">
+                                        <th style="font-weight:500">
+                                            Date/Time
+                                        </th>
+                                        
+                                        <th style="font-weight:500 ">
+                                            Action
+                                        </th>
+                                            <th style="font-weight:500 ">
+                                                Notes
+                                            </th>
+                                            <th style="font-weight:500 ">
+                                                    Files/Doc
+                                                </th>
+                                                <th style="font-weight:500 ">
+                                                        Result
+                                                    </th>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                    <td>
+                                               <a> 04/02/2018 05:20:20 </a>
+                                               </td> 
+                                               <td>
+                                                       Consent Form Sent
+                                               </td>
+                                               <td>
+                                                       None
+                                               </td>
+                                               <td>
+                                                      None
+                                               </td>
+                                               <td>
+                                                       Completed
+                                                </td>
+                                              
+                                           </tr> 
+
+                                            <tr>
+                                                    <td>
+                                               <a> 04/02/2018 05:15:20 </a>
+                                               </td> 
+                                               <td>
+                                                       Profile Created
+                                               </td>
+                                               <td>
+                                                       None
+                                               </td>
+                                               <td>
+                                                      None
+                                               </td>
+                                               <td>
+                                                       Completed
+                                                </td>
+                                              
+                                           </tr> 
+                                
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>                                                                             
+</div>
+
+
+                                   
+
+                   
 
 
 
@@ -304,17 +315,24 @@ Pending                                                                    </but
     </div>
 </body>
 <!--   Core JS Files   -->
+
+
 <script>
-    jQuery(document).ready(function($) {
-    $(".clickable-row").click(function() {
-        window.location = $(this).data("href");
-    });
-});
+tippy('.btn',{
+  delay: 100,
+  arrow: true,
+  arrowType: 'round',
+  size: 'large',
+  animation: 'scale'
+})
 </script>
+
+
 <script src="../assets/js/core/jquery.min.js"></script>
+<script src="https://unpkg.com/tippy.js@2.5.2/dist/tippy.all.min.js"></script>
 <script src="../assets/js/core/popper.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="../assets/js/bootstrap-material-design.js"></script>
+<script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
 <!--  Charts Plugin, full documentation here: https://gionkunz.github.io/chartist-js/ -->
 <script src="../assets/js/plugins/chartist.min.js"></script>
 <!-- Library for adding dinamically elements -->

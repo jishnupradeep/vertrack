@@ -94,7 +94,7 @@
             <nav class="navbar navbar-expand-lg navbar-transparent  navbar-absolute fixed-top">
                 <div class="container-fluid">
                     <div class="navbar-wrapper">
-                        <a class="navbar-brand" href="#pablo">Applicant Profile</a>
+                        <a class="navbar-brand" href="#pablo" style="font-size: 23px; font-weight: 500">Applicant Status > <span style="font-weight: 100">Adam Smith</span></a>
                     </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="sr-only">Toggle navigation</span>
@@ -114,7 +114,7 @@
                         </form>
                      <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="#pablo">
+                                <a class="nav-link" href="../examples/dashboard.html">
                                     <i class="material-icons">dashboard</i>
                                     <p>
                                         <span class="d-lg-none d-md-block">Stats</span>
@@ -157,7 +157,7 @@
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header card-header-primary">
-                                    <h4 class="card-title">Applicant Profile  <a href="applicant.html"><i style="margin-left: 1140px; font-size: 20px" class="material-icons">
+                                    <h4 class="card-title">Applicant Profile  <a href="applicant_profile_a.html"><i style="margin-left: 1140px; font-size: 20px" class="material-icons">
                                             cancel
                                             </i></a></h4> 
                                     
@@ -165,22 +165,22 @@
                                 <div class="card-body table-responsive">
 <div class="row" style="align-self: midd;">
         <div class="col-3" style="margin-left: 40px;margin-top: 20px">
-                <p style=" font-size: 16px">Name: <span style="font-weight: bold;">John Doe</span></p> 
-                <p style=" font-size: 16px">Email: <span style="font-weight: bold">john.doe@gmail.com</span></p>
-                <p style=" font-size: 16px">Phone: <span style="font-weight: bold">+1(912)-345-1234</span></p>
-                <p style=" font-size: 16px">Address: <span style="font-weight: bold">Chicago, IL</span></p>
+                <p style=" font-size: 16px">Name: <span style="font-weight: bold;">Adam Smith</span></p> 
+                <p style=" font-size: 16px">Email: <span style="font-weight: bold">adam.smith@yahoo.com</span></p>
+                <p style=" font-size: 16px">Phone: <span style="font-weight: bold">+1(456)-345-1234</span></p>
+                <p style=" font-size: 16px">Address: <span style="font-weight: bold">Milwaukee, WI</span></p>
              </div>
 
              <div class="col-3" style="margin-left: 110px;margin-top: 20px">
-                    <p style=" font-size: 16px">Profile ID: <span style="font-weight: bold">MB182501</span></p> 
-                    <p style=" font-size: 16px">Release Form: <span style="font-weight: bold">Received</span></p>
-                    <p style=" font-size: 16px">Admission Round: <span style="font-weight: bold">1</p>
+                    <p style=" font-size: 16px">Profile ID: <span style="font-weight: bold">MB181342</span></p> 
+                    <p style=" font-size: 16px">Consent Form: <span style="font-weight: bold; color: rgb(24, 207, 0)">Received</span></p>
+                    <p style=" font-size: 16px">Admission Round: <span style="font-weight: bold">5</p>
                  </div>
 
                  <div class="col-3" style="margin-left: 80px;margin-top: 20px">
-                        <p style=" font-size: 16px">Status: <span style="font-weight: bold; color: rgb(255, 166, 0)">In Progress</span></p> 
-                        <button type="button" rel="tooltip" class="btn" style="background: linear-gradient(to top left, #3023AE , #C86DD7); border-radius: 15px; width: 138px">
-                                Status Log                                                                    </button>
+                        <p style=" font-size: 16px">Status: <span style="font-weight: bold; color:#36d136">Completed</span></p> 
+                        <button onclick="window.location.href='applicant_profile_a.html'" type="button" rel="tooltip" class="btn" style="background: linear-gradient(to top left, #3023AE , #C86DD7); border-radius: 15px; width: 170px">
+                                Back to Profile                                                                    </button>
                      </div>
 </div>
 
@@ -196,96 +196,189 @@
                <div class="col-12">
                     <div class="card">
                         <div class="card-header card-header-primary">
-                            <h4 class="card-title ">Work Experience</h4>
+                            <h4 class="card-title ">Status Log</h4>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table">
                                     <thead class=" text-primary">
                                         <th style="font-weight:500">
-                                            #
+                                            Date/Time
                                         </th>
-                                        <th style="font-weight:500">
-                                                Company Name
-                                            </th>
+                                        
                                         <th style="font-weight:500 ">
-                                            Position Held
+                                            Action
                                         </th>
                                             <th style="font-weight:500 ">
-                                                From
+                                                Notes
                                             </th>
                                             <th style="font-weight:500 ">
-                                                    To
+                                                    Files/Doc
                                                 </th>
                                                 <th style="font-weight:500 ">
-                                                        Status
+                                                        Result
                                                     </th>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                                 <td>
-                                            <a href=""> 1 </a>
-                                            </td> 
-                                            <td>
-                                                    Delta Corporation
-                                            </td>
-                                            <td>
-                                                    Project Manager
-                                            </td>
-                                            <td>
-                                                   05/20/2015
-                                            </td>
-                                            <td>
-                                                    01/05/2018
-                                             </td>
-                                            <td>
-                                               <a href="https://ropsten.etherscan.io/tx/0x9388c0e0b1e7bd7c2203b98edf642183ae40027cb0d9e371463e103f95a45d62" target="_blank">    <button type="button" rel="tooltip" class="btn" title="On Blockchain. Click to view transaction." style="background-color: #36d136;border-radius: 20px; width: 138px">
-Verified                                                                    </button></a>
-                                            </td>
-                                        </tr> 
-                                        <tr>
+
+
+                                            <tr>
+                                                    <td>
+                                               <a> 04/26/2018 03:04:21 </a>
+                                               </td> 
+                                               <td>
+                                                       Qualcomm - Mountain View - Employment Verification
+                                               </td>
+                                               <td>
+                                                    Call/Email: HR Officer (Marie) + Certificate Verified
+                                               </td>
+                                               <td>
+                                                      None
+                                               </td>
+                                               <td>
+                                                       Completed
+                                                </td>
+                                              
+                                           </tr> 
+
+
+                                           <tr>
                                                 <td>
-                                           <a href=""> 2 </a>
+                                           <a> 03/15/2018 11:05:09 </a>
                                            </td> 
                                            <td>
-                                                   Intuit Inc 
+                                                   Intel HR, Oregon - Employment Verification
                                            </td>
                                            <td>
-                                                   Project Designer
+                                                   Call/Email: HR Officer (Henry) + Certificate Verified
                                            </td>
                                            <td>
-                                                  01/03/2013
+                                                  None
                                            </td>
                                            <td>
-                                                   01/03/2014
+                                                   Completed
                                             </td>
-                                           <td>
-                                            <a href="#"><button type="button" rel="tooltip" class="btn" style="background-color: #f39428;border-radius: 20px">
-In Progress                                                                    </button></a>
-                                           </td> 
+                                          
                                        </tr> 
 
-                                       <tr>
+
+                                            <tr>
+                                                    <td>
+                                               <a> 03/15/2018 11:05:09 </a>
+                                               </td> 
+                                               <td>
+                                                       Intel HR, Oregon - Employment Verification
+                                               </td>
+                                               <td>
+                                                       Call/Email: HR Officer (Henry) <span style="color: rgb(255, 0, 0)"> [No Response]</span>
+                                               </td>
+                                               <td>
+                                                      None
+                                               </td>
+                                               <td>
+                                                       Incomplete
+                                                </td>
+                                              
+                                           </tr> 
+
+
+                                            <tr>
+                                                    <td>
+                                               <a> 02/11/2018 17:12:16 </a>
+                                               </td> 
+                                               <td>
+                                                       UCLA, Admission Office
+                                               </td>
+                                               <td>
+                                                       Call: Addmissions Officer (Mark) + Degree Verification
+                                               </td>
+                                               <td>
+                                                      None
+                                               </td>
+                                               <td>
+                                                       Completed
+                                                </td>
+                                              
+                                           </tr> 
+
+                                           <tr>
+                                                <td>
+                                           <a> 02/10/2018 17:25:16 </a>
+                                           </td> 
+                                           <td>
+                                                   Consent Form Received
+                                           </td>
+                                           <td>
+                                                   Consent form on DocuSign
+                                           </td>
+                                           <td>
+                                                  Attached
+                                           </td>
+                                           <td>
+                                                   Completed
+                                            </td>
+                                          
+                                       </tr> 
+
+
+
+                                        <tr>
+                                                 <td>
+                                            <a> 02/10/2018 12:20:10 </a>
+                                            </td> 
                                             <td>
-                                       <a href=""> 3 </a>
-                                       </td> 
-                                       <td>
-                                               Boeing 
-                                       </td>
-                                       <td>
-                                               Design Lead
-                                       </td>
-                                       <td>
-                                              18/01/2011
-                                       </td>
-                                       <td>
-                                               01/02/2013
-                                        </td>
-                                       <td>
-                                               <button type="button" rel="tooltip" class="btn" title="Check Status Log for more information."  style="background-color: #da2a2a;border-radius: 20px; width: 138px">
-Flagged                                                                    </button>
-                                       </td>
-                                   </tr> 
+                                                    UCLA, Information Systems Dept.
+                                            </td>
+                                            <td>
+                                                    Call + Transcript Verification
+                                            </td>
+                                            <td>
+                                                   None
+                                            </td>
+                                            <td>
+                                                    Completed
+                                             </td>
+                                           
+                                        </tr> 
+
+                                        <tr>
+                                                <td>
+                                           <a> 02/02/2018 05:20:20 </a>
+                                           </td> 
+                                           <td>
+                                                   Consent Form Sent
+                                           </td>
+                                           <td>
+                                                   None
+                                           </td>
+                                           <td>
+                                                  None
+                                           </td>
+                                           <td>
+                                                   Completed
+                                            </td>
+                                          
+                                       </tr> 
+
+                                        <tr>
+                                                <td>
+                                           <a> 02/02/2018 05:15:20 </a>
+                                           </td> 
+                                           <td>
+                                                   Profile Created
+                                           </td>
+                                           <td>
+                                                   None
+                                           </td>
+                                           <td>
+                                                  None
+                                           </td>
+                                           <td>
+                                                   Completed
+                                            </td>
+                                          
+                                       </tr> 
+                                
                                         
                                     </tbody>
                                 </table>
@@ -294,90 +387,7 @@ Flagged                                                                    </but
                     </div>
                 </div>                                                                             
 </div>
-<hr>
 
-<div class="row">
-        <div class="col-12">
-             <div class="card">
-                 <div class="card-header card-header-primary">
-                     <h4 class="card-title ">Education</h4>
-                 </div>
-                 <div class="card-body">
-                     <div class="table-responsive">
-                         <table class="table">
-                             <thead class=" text-primary">
-                                 <th style="font-weight:500">
-                                     #
-                                 </th>
-                                 <th style="font-weight:500">
-                                         School Name
-                                     </th>
-                                 <th style="font-weight:500 ">
-                                     Degree Earned 
-                                 </th>
-                                     <th style="font-weight:500 ">
-                                         From
-                                     </th>
-                                     <th style="font-weight:500 ">
-                                             To
-                                         </th>
-                                         <th style="font-weight:500 ">
-                                                 Status
-                                             </th>
-                             </thead>
-                             <tbody>
-                                 <tr>
-                                          <td>
-                                     <a href=""> 1 </a>
-                                     </td> 
-                                     <td>
-                                             UC Berkeley
-                                     </td>
-                                     <td>
-                                             M.S Industrial Design
-                                     </td>
-                                     <td>
-                                            01/04/2009
-                                     </td>
-                                     <td>
-                                             12/04/2010
-                                      </td>
-                                     <td>
-                                             <button type="button" rel="tooltip" class="btn" style="background-color: #36d136;border-radius: 20px; width: 138px">
-Verified                                                                    </button>
-                                     </td>
-                                 </tr> 
-                                 <tr>
-                                         <td>
-                                    <a href=""> 2 </a>
-                                    </td> 
-                                    <td>
-                                            University of Chicago  
-                                    </td>
-                                    <td>
-                                            B.S Political Science
-                                    </td>
-                                    <td>
-                                           01/03/2005
-                                    </td>
-                                    <td>
-                                            01/03/2008
-                                     </td>
-                                    <td>
-                                            <button type="button" rel="tooltip" class="btn" style="background-color: #f39428;border-radius: 20px">
-In Progress                                                                    </button>
-                                    </td>
-                                </tr> 
-
-                                
-                                 
-                             </tbody>
-                         </table>
-                     </div>
-                 </div>
-             </div>
-         </div>                                                                             
-</div>
 
                                    
 
